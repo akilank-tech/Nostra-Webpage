@@ -42,6 +42,7 @@ body {
 
 .menu i {
     display: none;
+    cursor: pointer;
 }
 
 .menu1 {
@@ -321,6 +322,41 @@ body {
 h2 {
     margin: 0;
 }
+.close-btn{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+.sidenavbar{
+ background-color: lightgreen;
+ display: none; 
+ width: 50%; 
+ height: 100vh;
+ position: fixed;
+  top: 0;
+  left: 0;
+ z-index: 20;
+ transition: all;
+ transition-duration: 0.6s;
+}
+.sidenavbar ul{
+    padding: 30px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+ flex-direction: column;
+}
+
+.sidenavbar a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.sidenavbar a:hover{
+    text-decoration: underline;
+}
 
 @media screen and (max-width:800px) {
     body {
@@ -402,7 +438,7 @@ h2 {
     }
 
     .want-box__img {
-         max-width: 150px;
+         max-width: 120px;
         height: 100px;
     }
     .want-box button{
@@ -415,7 +451,7 @@ h2 {
     }
 
     .wantbox1 {
-        gap: 30px;
+        gap: 20px;
     }
 
     .footer {
@@ -425,5 +461,10 @@ h2 {
 
     .container1 {
         text-align: center;
+    }
+    .sidenavbar{
+        display: flex;
+        gap: 90px;
+        left: -50%;
     }
 }
