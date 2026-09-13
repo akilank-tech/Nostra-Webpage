@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div id="offtag" class="offtag">
@@ -23,24 +24,99 @@
         <h1 class="heading">Nostra</h1>
         <div class ="menu">
             <a class="menu1" href="C:\Users\user\Desktop\FSWD\Nostra\index.html" target="_parent">Home</a>
-            <a class="menu1" href="#">New Arrival</a>
-            <a class="menu1" href="#">Most Wanted</a>
+            <a class="menu1" href="index.html#newarrival">New Arrival</a>
+            <a class="menu1" href="index.html#wantcontainer">Most Wanted</a>
             <a class="menu1" href="C:\Users\user\Desktop\FSWD\Nostra\collection.html" target="_parent">Collections</a>
             <a class="menu1" href="C:\Users\user\Desktop\FSWD\Nostra\contact.html" target="_parent">Contact Us</a>
+             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </div>
     <div id="sidenavbar" class="sidenavbar">
         <div class="close-btn"><p>X</p></div>
         <ul>
             <li><a  href="C:\Users\user\Desktop\FSWD\Nostra\index.html" target="_parent">Home</a></li>
-            <li><a  href="#newarrival">New Arrival</a></li>
-            <li><a  href="#wantcontainer">Most Wanted</a></li>
+            <li><a  href="index.html#newarrival">New Arrival</a></li>
+            <li><a  href="index.html#wantcontainer">Most Wanted</a></li>
             <li> <a  href="C:\Users\user\Desktop\FSWD\Nostra\collection.html"
                     target="_parent">Collections</a></li>
             <li><a  href="C:\Users\user\Desktop\FSWD\Nostra\contact.html" target="_parent">Contact Us</a>
             </li>
         </ul>
 
+    </div>
+    <div class="collection">
+        <div class="collection-check">
+            <div class="collection-check1">
+                <h4>occasion</h4>
+                <input class="filter-check" type="checkbox" value="summer">Summer <br>
+                <input class="filter-check" type="checkbox" value="party">Party <br>
+                <input class="filter-check" type="checkbox" value="beach">Beach <br>
+            </div>
+            <div class="collection-check1">
+                <h4>Colors</h4>
+                <input class="filter-check" type="checkbox" value="red">Red <br>
+                <input class="filter-check" type="checkbox" value="blue">Blue <br>
+                <input class="filter-check" type="checkbox" value="white">White <br>
+                <input class="filter-check" type="checkbox" value="green">Green <br>
+            </div>
+            <div class="collection-check1">
+                <h4>Arrivals</h4>
+                <input class="filter-check" type="checkbox" value="new">New <br>
+                <input class="filter-check" type="checkbox" value="old">Old <br>
+            </div>
+        </div>
+        <div id="collectionsearch" class="collection-search">
+            <input id="search" class="search" type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
+            
+            <div class="search-img">
+                <div id="search-img" class="search-img1" data-category="party">
+                    <img class="image" src="./images/photo 6.avif" alt="">
+                    <h2>Pantaloons</h2>
+                    <p>₹ 999</p>
+                    
+                </div>
+                <div id="search-img" class="search-img1" data-category="summer">
+                    <img class="image" src="./images/photo 2.avif" alt="">
+                    <h2>Nyrika Kurta</h2>
+                    <p>₹ 665</p>
+                </div>
+                <div id="search-img" class="search-img1" data-category="beach">
+                    <img class="image" src="./images/photo 3.avif" alt="">
+                    <h2>Yankita Saree</h2>
+                    <p>₹ 799</p>
+                </div>
+                <div id="search-img" class="search-img1" data-category="blue">
+                    <img class="image" src="./images/photo 4.avif" alt="">
+                    <h2>XQsee</h2>
+                    <p>₹ 360</p>
+                </div>
+                <div id="search-img" class="search-img1" data-category="red">
+                    <img class="image" src="./images/photo 5.avif" alt="">
+                    <h2>MYRIE Kurta</h2>
+                    <p>₹ 675</p>
+                </div>
+                <div id="search-img" class="search-img1" data-category="white">
+                    <img class="image" src="./images/photo 6.avif" alt="">
+                    <h2>La Martina Dress</h2>
+                    <p>₹ 3170</p>
+                </div>
+                <div id="search-img" class="search-img1" data-category="green">
+                    <img class="image" src="./images/photo 7.avif" alt="">
+                    <h2>Texstile Kurta</h2>
+                    <p>₹ 419</p>
+                </div>
+                <div id="search-img" class="search-img1" data-category="new">
+                    <img class="image" src="./images/photo 8.avif" alt="">
+                    <h2>Indie Picks</h2>
+                    <p>₹ 1240</p>
+                </div>
+                <div id="search-img" class="search-img1" data-category="old">
+                    <img class="image" src="./images/photo 3.avif" alt="">
+                    <h2>Nyrika Saree</h2>
+                    <p>₹ 1616</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container1">
         <h2>Join our News Letter</h2>
