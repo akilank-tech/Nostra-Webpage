@@ -176,16 +176,10 @@ body {
 
 .card {
     display: flex;
-    justify-content: space-between;
     padding: 20px;
+    gap: 50px;
     align-items: center;
 }
-
-.card h3 {
-    font-size: 30px;
-    width: 350px;
-}
-
 .values {
     display: flex;
     justify-content: space-between;
@@ -271,11 +265,11 @@ body {
     border-radius: 10px;
 }
 
-.want-box h6 {
+.want-box button {
     text-align: center;
-    width: 50px;
     padding: 5px;
     background-color: red;
+    border-style: none;
     color: white;
     position: absolute;
     top: 0;
@@ -351,12 +345,7 @@ h2 {
     }
 
     .card h3 {
-        font-size: 25px;
-        width: 250px;
-    }
-
-    .values {
-        justify-content: center;
+        font-size: 12px;
     }
 
     .want-box__img {
@@ -371,6 +360,9 @@ h2 {
 }
 
 @media screen and (max-width:600px) {
+    .card{
+        font-size: ;
+    }
     .menu i {
         display: flex;
     }
@@ -397,39 +389,40 @@ h2 {
         font-size: 20px;
     }
 
-    .values {
-        justify-content: center;
-    }
-
     .values-props {
-        width: 150px;
-        font-size: 14px;
+        width: 70px;
+        height: 180px;
+        font-size: 10px;
     }
 
     .arrival-img__1 {
-        max-width: 250px;
-        height: 180px;
-    }
-
-    .arrival {
-        justify-content: center;
+        max-width: 150px;
+        height: 100px;
     }
 
     .btn {
-        width: 70px;
-        font-size: 10px;
+        width: 60px;
+        font-size: 8px;
         padding: 2px;
-        top: 50%;
-        left: 25%;
+        top: 43%;
+        left: 15%;
     }
 
     .want-box__img {
-        max-width: 190px;
-        height: 230px;
+         max-width: 150px;
+        height: 100px;
+    }
+    .want-box button{
+    font-size: 8px;
+    }
+    .want-box i{
+    font-size: 15px;
+    bottom: 8px;
+    right: 5px;
     }
 
     .wantbox1 {
-        gap: 50px;
+        gap: 35px;
     }
 
     .footer {
