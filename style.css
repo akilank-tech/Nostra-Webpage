@@ -65,7 +65,7 @@ body {
 .formcontainer {
     background-color: lightgreen;
     width: 700px;
-    height: 500px;
+    height: 450px;
     padding: 30px;
 
 }
@@ -109,8 +109,10 @@ body {
 }
 
 .container1 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .container1 h2 {
@@ -119,6 +121,7 @@ body {
 }
 
 .container1 input {
+    width: 700px;
     border: solid black 2px;
     height: 30px;
 }
@@ -374,6 +377,7 @@ h2 {
 }
 
 .collection-check {
+    width: 150px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -456,23 +460,25 @@ h2 {
 
     .formcontainer {
         max-width: 500px;
+        height: 400px;
         padding: 20px;
     }
 
     .contactform input {
-        width: 450px;
+        width: 488px;
         height: 40px;
         margin-top: 5px;
     }
 
     .contactform textarea {
-        width: 450px;
+        width: 488px;
         height: 95px;
         margin-top: 5px;
     }
-    .contactform button{
-         right: 12%;
-    bottom: -16%;
+
+    .contactform button {
+        right: 4%;
+        bottom: -18%;
     }
 
     .search {
@@ -501,6 +507,11 @@ h2 {
     .image {
         max-width: 220px;
     }
+    .container1 input {
+    width: 500px;
+    border: solid black 1.5px;
+    height: 25px;
+}
 
 }
 
@@ -587,31 +598,36 @@ h2 {
 
     .formcontainer {
         max-width: 350px;
+         height: 380px;
         padding: 20px;
     }
-    .contactform input {
-        width: 320px;
-    height: 35px;
-    margin-top: 5px;
-}
 
-.contactform textarea {
-    width: 320px;
-    height: 90px;
-    margin-top: 5px;
-}
-.contactform button{
-         right: 12%;
-    bottom: -16%;
+    .contactform input {
+        width: 339px;
+        height: 35px;
+        margin-top: 5px;
     }
+
+    .contactform textarea {
+        width: 339px;
+        height: 90px;
+        margin-top: 5px;
+    }
+
+    .contactform button {
+        right: 5%;
+        bottom: -20%;
+    }
+
     .search {
-        width: 50%;
+        width: 60%;
     }
 
     .search-img1 {
-        max-width: 140px;
+        max-width: 130px;
     }
-    .search-img1 h2{
+
+    .search-img1 h2 {
         font-size: 13px;
     }
 
@@ -624,6 +640,11 @@ h2 {
     }
 
     .image {
-        max-width: 120px;
+        max-width: 100px;
+    }
+    .container1 input{
+        width: 300px;
+        height: 20px;
+        border: solid black 1px;
     }
 }
