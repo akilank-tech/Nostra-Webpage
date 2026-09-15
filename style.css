@@ -151,6 +151,7 @@ body {
     padding: 10px;
     margin-top: 10px;
     height: 170px;
+    margin-bottom: 10px;
 }
 
 .footer-icon {
@@ -253,14 +254,20 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .wantbox1 {
     display: flex;
     justify-content: space-between;
     gap: 65px;
-
     scroll-snap-align: start;
+
+}
+
+.want::-webkit-scrollbar {
+    display: none;
 }
 
 .want-box {
@@ -425,10 +432,12 @@ h2 {
 .image {
     max-width: 280px;
 }
-.fa-heart.active{
+
+.fa-heart.active {
     color: red;
 }
-.fa-heart{
+
+.fa-heart {
     cursor: pointer;
 }
 
@@ -509,18 +518,20 @@ h2 {
         flex-direction: column;
         background-color: #F0F0F0;
     }
-     .collection-check {
-    width: 130px;
-}
+
+    .collection-check {
+        width: 130px;
+    }
 
     .image {
         max-width: 220px;
     }
+
     .container1 input {
-    width: 500px;
-    border: solid black 1.5px;
-    height: 25px;
-}
+        width: 500px;
+        border: solid black 1.5px;
+        height: 25px;
+    }
 
 }
 
@@ -607,7 +618,7 @@ h2 {
 
     .formcontainer {
         max-width: 350px;
-         height: 380px;
+        height: 380px;
         padding: 20px;
     }
 
@@ -627,9 +638,10 @@ h2 {
         right: 5%;
         bottom: -20%;
     }
+
     .collection-check {
-    width: 90px;
-}
+        width: 90px;
+    }
 
     .search {
         width: 60%;
@@ -654,7 +666,8 @@ h2 {
     .image {
         max-width: 80px;
     }
-    .container1 input{
+
+    .container1 input {
         width: 300px;
         height: 20px;
         border: solid black 1px;
