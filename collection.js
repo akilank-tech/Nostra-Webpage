@@ -33,26 +33,25 @@ search.addEventListener("keyup", function () {
 })
 
 
-var collectionchecks= document.querySelectorAll(".collection-check1")
-var searchimages = document.querySelectorAll(".search-img1")
+var checkboxes = document.querySelectorAll(".filter-check")
 
-collectionchecks.forEach(collectioncheck =>{
-    collectioncheck.addEventListener("change",filterImages);
-});
+function filterimages(){
+    var checkedvalues = Array.from(checkboxes)
+    .filter(checkbox => checkbox.checked)
+    .map(checkbox => checkbox.value);
+    
+    collectionlist.forEach(card =>{
+        var cardcategory = card.getAttribute("data-category");
 
-function filterImages(){
-    var selectedCategories = Array.from(collectionchecks)
-    .filter(chk =>chk.checked)
-    .map(chk=>chk.value);
-
-    searchimages.forEach(searchimage => {
-        var category = searchimage.getAttribute('data-category');
-        if(selectedCategories.length===0||selectedCategories.includes(category))
-        {
-            searchimage.classList.remove('hide')
+        if(checkedvalues.length === 0 || checkedvalues.includes(cardcategory)){
+            card.style.display ="block";
         }
         else{
-            searchimage.classList.add('hide')
+            card.style.display="none";
         }
     });
 }
+
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener("change",filterimages);
+});
