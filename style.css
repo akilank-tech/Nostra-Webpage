@@ -425,6 +425,12 @@ h2 {
 .image {
     max-width: 280px;
 }
+.fa-heart.active{
+    color: red;
+}
+.fa-heart{
+    cursor: pointer;
+}
 
 
 @media screen and (max-width:800px) {
@@ -622,7 +628,7 @@ h2 {
         bottom: -20%;
     }
     .collection-check {
-    width: 100px;
+    width: 90px;
 }
 
     .search {
@@ -641,6 +647,7 @@ h2 {
         margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
+        flex-basis: 20%;
         justify-content: space-between;
         gap: 10px;
     }
