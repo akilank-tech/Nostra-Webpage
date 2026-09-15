@@ -503,6 +503,9 @@ h2 {
         flex-direction: column;
         background-color: #F0F0F0;
     }
+     .collection-check {
+    width: 130px;
+}
 
     .image {
         max-width: 220px;
@@ -618,6 +621,9 @@ h2 {
         right: 5%;
         bottom: -20%;
     }
+    .collection-check {
+    width: 100px;
+}
 
     .search {
         width: 60%;
