@@ -648,7 +648,6 @@ h2 {
         display: flex;
         flex-wrap: wrap;
         flex-basis: 50%;
-        justify-content: space-between;
         gap: 10px;
     }
 
