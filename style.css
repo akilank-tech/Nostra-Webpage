@@ -636,7 +636,7 @@ h2 {
     }
 
     .search-img1 {
-        max-width: 130px;
+        max-width: 110px;
     }
 
     .search-img1 h2 {
@@ -647,13 +647,12 @@ h2 {
         margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
-        flex-basis: 20%;
         justify-content: space-between;
         gap: 10px;
     }
 
     .image {
-        max-width: 100px;
+        max-width: 90px;
     }
     .container1 input{
         width: 300px;
